@@ -1,0 +1,7 @@
+// multi-module-example 프로젝트
+// 하위 프로젝트 관리
+rootProject.name = 'multi-module-example'
+include 'module-api'
+include 'module-admin'
+include 'module-common'
+
