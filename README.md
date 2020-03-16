@@ -15,6 +15,13 @@
 │   └── src
 └── settings.gradle
 ```
+
+
+#### issue
+- gradle 새로운 buildscript에서는 bootJar : false가 동작하지 않음..
+- 대부분 opensource는 buildscript를 사용하고 있음.
+
+
 ## Reference
 - <https://github.com/spring-projects/spring-security>
 - <https://docs.gradle.org/current/userguide/multi_project_builds.html#sec:cross_project_configuration>

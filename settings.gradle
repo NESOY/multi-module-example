@@ -5,3 +5,7 @@ include 'module-api'
 include 'module-admin'
 include 'module-common'
 
+// 한단계 더 낮춰서 include할 수 있다.
+// 여러개인 경우 편하게 하는 방법이 있다.. 아직 찾지 못했을 뿐..
+include 'module-clients:module-aws-client'
+

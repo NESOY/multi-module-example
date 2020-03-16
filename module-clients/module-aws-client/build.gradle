@@ -1,0 +1,6 @@
+bootJar { enabled = false }
+jar { enabled = true }
+
+dependencies {
+    testCompile group: 'org.mockito', name: 'mockito-core', version: '2.1.0'
+}
