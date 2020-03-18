@@ -11,16 +11,18 @@ buildscript {
     }
 }
 
-
-
 // 현재 프로젝트와 모든 서브 프로젝트를 반환
 allprojects {
     group 'com.nesoy'
     version '1.0-SNAPSHOT'
 }
 
-// 서브 프로젝트를 반환
-subprojects {
+def javaProjects() {
+    return subprojects.findAll { new File(it.projectDir, "src").exists() }
+}
+
+// subproject
+configure(javaProjects()) {
     /**
      * 내부에서 plugins 동작하지 않는 이슈
      */
@@ -28,15 +30,7 @@ subprojects {
     apply plugin: 'org.springframework.boot'
     apply plugin: 'io.spring.dependency-management'
 
-    /**
-     * 비어있는 디렉터리도 전부 bootJar를 실행해서 끔.
-     */
-    bootJar {
-        enabled = false
-    }
-
     repositories {
-        jcenter()
         mavenCentral()
     }
 

@@ -1,6 +1,9 @@
 /**
  * Main Class가 없는 경우 추가해야 동작한다.
  */
+bootJar {
+    enabled = false
+}
 jar {
     enabled = true
 }
