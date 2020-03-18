@@ -5,17 +5,24 @@
 .
 ├── build.gradle
 ├── module-admin
-│   ├── build.gradle
-│   └── src
+│   ├── build
+│   ├── build.gradle
+│   └── src
 ├── module-api
-│   ├── build.gradle
-│   └── src
+│   ├── build
+│   ├── build.gradle
+│   └── src
+├── module-clients
+│   └── module-aws-client
+│   │   ├── build
+│   │   ├── build.gradle
+│   │   └── src
 ├── module-common
-│   ├── build.gradle
-│   └── src
+│   ├── build
+│   ├── build.gradle
+│   └── src
 └── settings.gradle
 ```
-
 
 #### issue
 - gradle 새로운 buildscript에서는 bootJar : false가 동작하지 않음..
@@ -29,3 +36,4 @@
 - <https://reflectoring.io/spring-boot-gradle-multi-module/>
 - <https://jojoldu.tistory.com/123>
 - <https://gwonsungjun.github.io/articles/2019-04/gradle_multi_module>
+- <https://nesoy.github.io/articles/2020-03/grdle-filter-subproject>
